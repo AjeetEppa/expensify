@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render EditExpensePage correctly 1`] = `
+<Fragment>
+  <ExpenseForm
+    expense={
+      Object {
+        "amount": 2500,
+        "createdAt": 0,
+        "description": "Hathway",
+        "id": "1",
+        "note": "Intenet connection",
+      }
+    }
+    onSubmit={[Function]}
+  />
+  <button
+    onClick={[Function]}
+  >
+    Remove
+  </button>
+</Fragment>
+`;
