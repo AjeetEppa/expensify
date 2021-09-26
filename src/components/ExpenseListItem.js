@@ -1,3 +1,5 @@
+import moment from "moment";
+import numeral from "numeral";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -8,7 +10,8 @@ const ExpenseListItem = (props) => {
         <h2>{props.description}</h2>
       </Link>
       <p>
-        Amount: {props.amount} | Create at: {props.createdAt}
+        Amount: {numeral(props.amount / 100).format("$0,0.00")} | Create at:{" "}
+        {moment(props.createdAt).format("MMM Do YYYY")}
       </p>
     </>
   );
